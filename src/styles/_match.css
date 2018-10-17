@@ -1,0 +1,29 @@
+.match {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.match h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.match .matchdetails {
+  padding-bottom: 20px;
+}
+
+.matchbuttons {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.matchbuttons .btn-primary {
+  background-color: black;
+  border-color: white;
+}
+
+span {
+  margin: 0 5px;
+}
