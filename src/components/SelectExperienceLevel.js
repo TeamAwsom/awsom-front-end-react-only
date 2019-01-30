@@ -31,34 +31,3 @@ export default class SelectExperienceLevel extends Component {
     );
   }
 }
-// Using react-select
-//
-// import React, { Component } from 'react';
-// import Select from 'react-select';
-
-// const options = [
-//   { value: 'beginner', label: 'Beginner: 0-2 years' },
-//   { value: 'intermediate', label: 'Intermediate: 3-4 years' },
-//   { value: 'advanced', label: 'Advanced: 5+ years' }
-// ];
-
-// export default class SelectExperience extends Component {
-//   state = {
-//     selectedOption: null
-//   };
-//   handleChange = selectedOption => {
-//     this.setState({ selectedOption });
-//     console.log(`Option selected:`, selectedOption);
-//   };
-//   render() {
-//     const { selectedOption } = this.state;
-
-//     return (
-//       <Select
-//         value={selectedOption}
-//         onChange={this.handleChange}
-//         options={options}
-//       />
-//     );
-//   }
-// }
