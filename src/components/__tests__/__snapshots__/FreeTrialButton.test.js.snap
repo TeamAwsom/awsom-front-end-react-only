@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Free Trial Button renders as expected 1`] = `
+<button
+  className="btn freetrial_btn"
+  type="button"
+>
+  FREE TRIAL
+</button>
+`;
