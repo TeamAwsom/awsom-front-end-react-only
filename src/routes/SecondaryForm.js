@@ -6,29 +6,6 @@ import Loading from '../components/Loading';
 import * as Yup from 'yup';
 import '../styles/_freetrial.css';
 
-// const secondaryFormValues = {
-//   // firstName: '',
-//   // lastName: '',
-//   name: '',
-//   email: '',
-//   phone: '',
-//   studentName: '',
-//   birthDate: '',
-//   //anythingElse: '',
-//   hearAbout: '',
-//   studentID: '',
-//   teacherId: '',
-//   timeslot: {
-//     name: '',
-//     teacherID: '',
-//     email: '',
-//     time: {
-//       day: '',
-//       hour: ''
-//     }
-//   }
-// };
-
 const minBirthDate = '1900-01-01';
 
 const secondaryFormSchema = Yup.object({
@@ -116,7 +93,6 @@ export default class SecondaryForm extends Component {
               email: '',
               phone: '',
               studentName: '',
-              //birthDate: '2018-10-04T03:08:00.447Z',
               birthDate: '',
               hearAbout: '',
               studentID: `${this.props.location.studentID}`,
@@ -138,7 +114,6 @@ export default class SecondaryForm extends Component {
             //   }, 500);
             // }}
             onSubmit={values => {
-              //alert(JSON.stringify(values, null, 2));
               this.setState({
                 isLoading: true
               });
@@ -288,25 +263,6 @@ export default class SecondaryForm extends Component {
                       {msg => <div className="field-error">{msg}</div>}
                     </ErrorMessage>
                   </div>
-
-                  {/* <div className="app__form_item">
-                    <div>
-                      Anything else you would like your teacher to know?
-                    </div>
-                    <Field
-                      name="anythingElse"
-                      className={
-                        errors.anythingElse && touched.anythingElse
-                          ? 'app__form_input field-error'
-                          : 'app__form_input'
-                      }
-                      type="text"
-                    />
-                    <ErrorMessage name="anythingElse">
-                      {msg => <div className="field-error">{msg}</div>}
-                    </ErrorMessage>
-                  </div> */}
-
                   <div className="app__form_item">
                     <div>How did you hear about us? *</div>
                     <div className="app__form_addresssub">

@@ -8,9 +8,6 @@ export default class Confirmation extends Component {
     super(props);
 
     this.state = { formSubmitted: false };
-
-    //this.handleConfirm = this.handleConfirm.bind(this);
-    //this.handleCancel = this.handleCancel.bind(this);
   }
 
   componentDidMount() {
@@ -23,9 +20,7 @@ export default class Confirmation extends Component {
       this.props.location.confirmedAppt.studentName, //studentName,
       this.props.location.confirmedAppt.teacher, //teacherName,
       this.formatDay(this.props.location.confirmedAppt.day), //day
-      //this.props.location.confirmedAppt.day, //day,
       this.formatHour(this.props.location.confirmedAppt.hour) //hour
-      //this.props.location.confirmedAppt.hour //hour
     );
 
     this.setState({
@@ -33,34 +28,6 @@ export default class Confirmation extends Component {
     });
   }
 
-  // handleCancel(event) {
-  //   event.preventDefault();
-  //   this.props.history.push({
-  //     pathname: '/'
-  //   });
-  // }
-
-  // handleConfirm(event) {
-  //   event.preventDefault();
-
-  //   this.sendEmail(
-  //     `${process.env.REACT_APP_EMAILJS_TEMPLATEID}`, //template
-  //     `${process.env.REACT_APP_EMAILJS_RECEIVER}`, //to_email,
-  //     `${process.env.REACT_APP_EMAILJS_SENDER}`, //from_email,
-  //     this.props.location.confirmedAppt.name, //to_name,
-  //     'Team AWSOM', //from_name,
-  //     this.props.location.confirmedAppt.studentName, //studentName,
-  //     this.props.location.confirmedAppt.teacher, //teacherName,
-  //     this.formatDay(this.props.location.confirmedAppt.day), //day
-  //     //this.props.location.confirmedAppt.day, //day,
-  //     this.formatHour(this.props.location.confirmedAppt.hour) //hour
-  //     //this.props.location.confirmedAppt.hour //hour
-  //   );
-
-  //   this.setState({
-  //     formSubmitted: true
-  //   });
-  // }
   sendEmail(
     templateId,
     to_email,
@@ -126,16 +93,6 @@ export default class Confirmation extends Component {
     if (!this.props.location.confirmedAppt) {
       return <Redirect to="/" />;
     }
-    // if (this.state.formSubmitted) {
-    //   return (
-    //     <div className="container">
-    //       <div className="match">
-    //         <h1>Thank You</h1>
-    //         <p>See you soon!</p>
-    //       </div>
-    //     </div>
-    //   );
-    // }
     return (
       <Fragment>
         <div className="container">
@@ -163,19 +120,6 @@ export default class Confirmation extends Component {
               </div>
             </div>
           </div>
-
-          {/* <div className="matchbuttons">
-            <button onClick={this.handleConfirm} className="btn btn-primary">
-              SEND EMAIL
-            </button>
-            <span />
-            <button
-              onClick={this.handleCancel}
-              className="btn btn-outline-secondary"
-            >
-              NO THANKS
-            </button>
-          </div>*/}
         </div>
       </Fragment>
     );

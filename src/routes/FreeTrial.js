@@ -54,22 +54,6 @@ const initialFormSchema = Yup.object({
   )
 });
 
-// function handleSubmit(url = ``, data = {}) {
-//   // Default options are marked with *
-//   return fetch(url, {
-//     method: 'POST', // *GET, POST, PUT, DELETE, etc.
-//     //mode: 'cors', // no-cors, cors, *same-origin
-//     //cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-//     //credentials: 'same-origin', // include, same-origin, *omit
-//     headers: {
-//       'Content-Type': 'application/json; charset=utf-8'
-//     },
-//     //redirect: 'follow', // manual, *follow, error
-//     //referrer: 'no-referrer', // no-referrer, *client
-//     body: JSON.stringify(data) // body data type must match "Content-Type" header
-//   }).then(response => response.json()); // parses response to JSON
-// }
-
 export default class FreeTrial extends React.Component {
   constructor(props) {
     super(props);
@@ -108,13 +92,6 @@ export default class FreeTrial extends React.Component {
             //   }, 500);
             // }}
             onSubmit={values => {
-              // let tempArray = values.availability;
-              // for (let i = 0; i < tempArray.length; i++) {
-              //   tempArray[i].fromTime = parseInt(tempArray[i].fromTime, 10);
-              //   tempArray[i].toTime = parseInt(tempArray[i].toTime, 10);
-              // }
-              // values.availability = tempArray;
-              //console.log('values.availability array: ', values.availability);
               this.setState({ isLoading: true });
               fetch(
                 `${
@@ -142,7 +119,6 @@ export default class FreeTrial extends React.Component {
                     data.message.includes('no matches found')
                   ) {
                     console.log('NO MATCH');
-                    //console.log(JSON.stringify(data));
                     this.setState(() => ({
                       isLoading: false
                     }));
@@ -151,7 +127,6 @@ export default class FreeTrial extends React.Component {
                     });
                   } else if (data.studentID) {
                     console.log('MATCH');
-                    //console.log(JSON.stringify(data));
                     this.setState(() => ({
                       teacherMatches: data,
                       isLoading: false
