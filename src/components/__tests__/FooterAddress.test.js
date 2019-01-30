@@ -1,10 +1,10 @@
 import React from 'react';
-import FreeTrialButton from '../FreeTrialButton';
+import FooterAddress from '../FooterAddress';
 import renderer from 'react-test-renderer';
 
-describe('Free Trial Button', () => {
+describe('FooterAddress', () => {
   it('renders as expected', () => {
-    const tree = renderer.create(<FreeTrialButton />).toJSON();
+    const tree = renderer.create(<FooterAddress />).toJSON();
 
     console.log(tree);
     expect(tree).toMatchSnapshot();

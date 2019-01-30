@@ -1,10 +1,10 @@
 import React from 'react';
-import FreeTrialButton from '../FreeTrialButton';
+import Logo from '../Logo';
 import renderer from 'react-test-renderer';
 
-describe('Free Trial Button', () => {
+describe('Logo', () => {
   it('renders as expected', () => {
-    const tree = renderer.create(<FreeTrialButton />).toJSON();
+    const tree = renderer.create(<Logo />).toJSON();
 
     console.log(tree);
     expect(tree).toMatchSnapshot();

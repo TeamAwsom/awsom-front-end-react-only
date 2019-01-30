@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders as expected 1`] = `
+<footer
+  className="footer"
+>
+  <div
+    className="footer_socialmedia"
+  >
+    <div
+      className="footer_socialmedia_container"
+    >
+      <span
+        className="fa-stack fa-2x"
+      >
+        <a
+          href="https://www.facebook.com/awsomWA"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fas fa-circle fa-stack-2x"
+          />
+          <i
+            className="fab fa-facebook-f fa-stack-1x"
+          />
+        </a>
+      </span>
+      <span
+        className="footer_socialmedia_tab"
+      />
+      <span
+        className="fa-stack fa-2x"
+      >
+        <a
+          href="http://www.yelp.com/biz/the-andrew-white-school-of-music-kenmore-3"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fas fa-circle fa-stack-2x"
+          />
+          <i
+            className="fab fa-yelp fa-stack-1x"
+          />
+        </a>
+      </span>
+      <span
+        className="footer_socialmedia_tab"
+      />
+      <span
+        className="fa-stack fa-2x"
+      >
+        <a
+          href="https://www.instagram.com/awsomusic/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fas fa-circle fa-stack-2x"
+          />
+          <i
+            className="fab fa-instagram fa-stack-1x"
+          />
+        </a>
+      </span>
+      <span
+        className="footer_socialmedia_tab"
+      />
+      <span
+        className="fa-stack fa-2x"
+      >
+        <a
+          href="https://www.linkedin.com/company/andrew-white-school-of-music/?trk=biz-companies-cym"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fas fa-circle fa-stack-2x"
+          />
+          <i
+            className="fab fa-linkedin-in fa-stack-1x"
+          />
+        </a>
+      </span>
+    </div>
+  </div>
+  <div
+    className="footer_address"
+  >
+    <div
+      className="footer_address_container"
+    >
+      AWSOM, PO BOX 2593, KIRKLAND, WA 98023
+      <span
+        className="footer_address_tab"
+      />
+      (425) 951-9758
+      <span
+        className="footer_address_tab"
+      />
+      HELLO@AWSOM.INFO
+    </div>
+  </div>
+</footer>
+`;
