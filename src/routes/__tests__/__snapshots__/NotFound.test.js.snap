@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound renders as expected 1`] = `
+<div>
+  <div
+    className="container notfound"
+  >
+    <h1>
+      404 - Not Found
+    </h1>
+  </div>
+</div>
+`;
